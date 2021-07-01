@@ -1,14 +1,14 @@
 '''
-Define variables a and b. Read values a and b from console and calculate: ​
-    a + b ​
-    a - b ​
-    a * b ​
-    a / b. ​
+Define variables a and b. Read values a and b from console and calculate:
+    - a + b
+    - a - b
+    - a * b
+    - a / b
 
-Output obtained results.
+Output obtained results
 '''
 
-print("Enter values for \"a\" and \"b\" (numers are allowed only)")
+print("Enter values for \"a\" and \"b\" (numers are allowed only)");
 while True:
     try:
         a = float(input());
