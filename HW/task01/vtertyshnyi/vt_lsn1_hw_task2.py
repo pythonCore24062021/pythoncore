@@ -14,7 +14,7 @@ print("What is your name?");
 while True:
     try:
         name = str(input());
-        if len(name) == 0: raise Exception("Name should have at least 1 charachter, please try again:");
+        if not name: raise Exception("Name should have at least 1 charachter, please try again:");
         break;
     except Exception as msg:
         print(msg);
@@ -34,7 +34,7 @@ print("Where do you live?")
 while True:
     try:
         city = str(input());
-        if len(city) == 0: raise Exception("City should have at least 1 charachter, please try again:");
+        if not city: raise Exception("City should have at least 1 charachter, please try again:");
         break;
     except Exception as msg:
         print(msg);
@@ -42,4 +42,3 @@ while True:
 print("Hello,", name);
 print("Your age is", age);
 print("You live in", city);
-

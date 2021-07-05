@@ -27,4 +27,8 @@ print("Thanks for your inputs! Results are:");
 print("a + b = ", a + b);
 print("a - b = ", a - b);
 print("a * b = ", a * b);
-print("a / b = ", a / b);
+
+try:
+    print("a / b = ", a / b)
+except ZeroDivisionError:
+        print("a / b = unable to devide by 0")
