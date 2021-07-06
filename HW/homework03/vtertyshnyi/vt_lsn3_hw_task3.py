@@ -1,15 +1,14 @@
 row_splitter = '\n' + '#' * 100 + '\n'
 
-num_a = 10
-num_b = 55
-
 print(row_splitter)
-print(f"PART 1 => switch two variables without third one: {num_a} and {num_b}")
-num_a += num_b
-num_b = num_a - num_b
-num_a = num_a - num_b 
-print(f"Switched: {num_a} and {num_b}")
-print(row_splitter)
+print("PART 1 => swap two variables without third one")
 
-# VT Open Questions: 
-# - What about other types?!!! 
+a = ('str1', 47, {4, 5, 7})
+b = {5, 'str2'}
+
+print(f"Initial: {a} and {b}")
+
+a, b = b, a
+
+print(f"Switched: {a} and {b}")
+print(row_splitter)
