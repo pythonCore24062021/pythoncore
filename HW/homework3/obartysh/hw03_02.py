@@ -9,3 +9,4 @@ reversed_list = res[::-1];
 print('reversed List:', reversed_list);
 res.sort();
 print(res);
+
