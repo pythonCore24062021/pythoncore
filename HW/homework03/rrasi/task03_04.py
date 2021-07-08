@@ -6,9 +6,9 @@ var_float = var_float-1
 var_div1 =  var_int/var_float
 var_div2 = var_big/var_float
 var_str = var_str*2 + "Yes"*3
-print(var_big)
-print(var_float)
-print(var_div1)
-print(var_div2)
-print('New var_str', var_str)
+print('var_big= ', var_big)
+print('var_float= ', var_float)
+print('var_div1= ', var_div1)
+print('var_div2= ', var_div2)
+print('New var_str:', var_str)
 
