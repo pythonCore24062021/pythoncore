@@ -33,4 +33,10 @@ print("The count better is:", count)
 replaced_string = str.replace('i', '&')
 print('Replaced string:', replaced_string)
 
+n2 = input("set number: ")
+a = int(n2[0])
+b = int(n2[1])
+c = int(n2[2])
+print("dobutok:", a*b*c)
+
 
