@@ -1,10 +1,13 @@
-number = '4311'
-res = 0
+number = input("Enter a number (no more than 4 symbols allowed): ")
 number_l = list(number)
-number_int = int(number)
-for i in number_l:
-    res = res + int(i)*(int(i)+1)
+# Revers numbers
+reversed_number = number[::-1]
+print(reversed_number)
 
-print(number_l)
-print(number_l.reverse())
-print(number_l.sort())
+# Sort numbers
+print(sorted(number_l))
+
+# Result of multiplication of all symbols one by one
+
+dobutok = int(number[0]) * int(number[1:2]) * int(number[2:3]) * int(number[3:4])
+print(dobutok)
