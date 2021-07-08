@@ -49,4 +49,8 @@ c = int(n2[2])
 n_sort = list(n2)
 n_sort.sort()
 print(n_sort)
-
+a = 10
+b = 20
+a, b = b, a
+print(a)
+print(b)
