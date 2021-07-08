@@ -128,4 +128,5 @@ dmypy.json
 # Pyre type checker
 .pyre/
 .idea/
-
+pyCore240621.code-workspace
+.DS_Store
