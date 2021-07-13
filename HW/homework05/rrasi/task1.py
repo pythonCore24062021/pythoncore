@@ -18,7 +18,10 @@ while i < 10:
         i += 1
         print('Turn number', i)
         break
-
+else:
+    print('The last Turn number', i)
+    print('Correct number is', a)
+    print('Game Over!')
 
 
 
