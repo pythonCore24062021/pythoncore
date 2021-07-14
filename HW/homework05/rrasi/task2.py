@@ -3,12 +3,7 @@ while i < 3:
     n = int(input("Set the number': "))
     i += 1
 count = 0
-while n > 0:
-    n, digit = divmod(n, 10)
-    for n in range(digit):
-     if digit % 5 == 0:
+for count in range(n):
+     if n % 5 == 0:
         count +=1
-print(count)
-
-
-
+     print(count)
