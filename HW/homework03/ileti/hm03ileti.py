@@ -21,6 +21,5 @@ If the implementation is easy to explain, it may be a good idea.
 Namespaces are one honking great idea -- let's do more of those!
 """
 print(python_philosophy.count("better", "never", "is"))
-print()
-a = "some text"
-print(a.count(""))
+print(python_philosophy.title())
+print(python_philosophy.replace("i", "&"))
