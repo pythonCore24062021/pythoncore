@@ -1,5 +1,5 @@
 n = int(input('Enter a height: '))
-m = int(input('Enter a weight: '))
+m = int(input('Enter a width: '))
 outline = '-'
 fill = '+'
 
