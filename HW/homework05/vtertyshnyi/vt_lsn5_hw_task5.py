@@ -19,9 +19,9 @@ def get_num ():
 
 P = 10
 H = 99
-lessThanP = 0
-greaterThanH = 0
-betweenPH = 0
+less_than_P = 0
+greater_than_H = 0
+between_P_H = 0
 
 while True:
     print("Please enter some number:")
@@ -30,16 +30,16 @@ while True:
         print("It's the end...")
         break
     if n < P:
-        lessThanP += n
-        continue
+        less_than_P += n
     elif n > H:
-        if greaterThanH == 0:
-            greaterThanH = n
+        if greater_than_H == 0:
+            greater_than_H = n
         else:
-            greaterThanH *= n
-        #greaterThanH *= n if greaterThanH != 0 else greaterThanH = n
-        continue
+            greater_than_H *= n
+        #greater_than_H *= n if greater_than_H != 0 else greater_than_H = n
     else:
-        betweenPH += 1
+        between_P_H += 1
     
-print(f"{lessThanP=}\n{greaterThanH=}\n{betweenPH=}")
+print(f"{less_than_P=}\
+    \n{greater_than_H=}\
+    \n{between_P_H=}")
