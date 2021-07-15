@@ -1,14 +1,13 @@
 P = 5
 H = 8
 i = 0
-while (n != P) or (n != H):
+n = int()
+suma = 0
+while (n != P) and (n != H):
     n = int(input("Set the number': "))
     i += 1
-      if
-        print("suma = " n + P)
-
-      print("Sum: ", suma)
-
-      break
+    if n < P:
+        suma += n
+#        print("suma = ",  n + P)
 else:
    print(suma)
