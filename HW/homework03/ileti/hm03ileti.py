@@ -1,4 +1,4 @@
-######1
+print("завдання 1")
 python_philosophy = """"
 Beautiful is better than ugly.
 Explicit is better than implicit.
@@ -20,36 +20,43 @@ If the implementation is hard to explain, it's a bad idea.
 If the implementation is easy to explain, it may be a good idea.
 Namespaces are one honking great idea -- let's do more of those!
 """
-print(python_philosophy.count("better", "never", "is"))
+print("counting words")
+print(python_philosophy.count("better"))
+print(python_philosophy.count("never"))
+print(python_philosophy.count("is"))
+print("Вивести весь текст у верхньому регістрі (всі великі літери)")
 print(python_philosophy.title())
+print("Замінити всі входження символу “і” на “&”")
 print(python_philosophy.replace("i", "&"))
 
-####2
-number = "4536"
-dobutok = number[0:5]
-dobutok = number[0] * number[1] * number[2] * number[3]
-print("Добуток чотиризначного числа: " + dobutok)
-print(f"Для цього числа {number} Визначте добуток чисел {dobutok})
+print("завдання 2")
 
+import random
+number =(random.randint(1000,9999))
+number = str(number)
+print("чотирицифрове натуральне число: " + number)
+mult = int(number[0]) * int(number[1]) * int(number[2]) * int(number[3])
+print(mult)
 
-#####3
-a=5
-b=10
+print("завдання 3")
+a = 5
+b = 10
 print(a)
 print(b)
+a, b = b, a
+print(a, b)
 
-a,b  = b, a
-print ("value a: " + a)
-print ("value b: " + b)
+print('завдання 4')
+var_int = 10
+var_float = 8.4
+var_str = "No"
 
-######4
-
-Змініть значення, збережене в змінній var_int, збільшивши його в 3.5 рази, результат надайте змінній var_big.
-Змініть значення, збережене в змінній var_float, зменшивши його на одиницю, результат надайте тій же змінній.
-Розділіть var_int на var_float, а потім var_big на var_float. Результат запишіть у змінні var_div1 та var_div2 відповідно.
-Змініть значення змінної var_str на "NoNoYesYesYes". При формуванні нового значення використовуйте операції конкатенації (+) і повторення рядка (*).
-
-
-var_int=10
-var_float=8.4
-var_str="No"
+var_big = var_int * 3.5
+print(var_big)
+var_float -= 1
+print(var_float)
+var_div1 = var_int / var_float
+print(var_div1)
+var_div2 = var_big / var_float
+print(var_div2)
+print(var_str + "NoYesYesYes")
