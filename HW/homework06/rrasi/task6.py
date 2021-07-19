@@ -3,15 +3,3 @@
 #(або 0, 3, 4, 5 - якщо індексація починається з нуля),
 #оскільки саме в цих позиціях першого масиву стоять парні числа.
 
-mylist = []
-mylist_positive = []
-x = 0
-for i in range(-5,10):
-    mylist.append(i)
-    print(mylist)
-while x < len(mylist):
-    if mylist[x] < 0:
-        mylist.remove(mylist[x])
-        continue
-    x += 1
-    print(mylist)
