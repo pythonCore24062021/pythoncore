@@ -1,7 +1,9 @@
 i = 0
-count_positive = 0
-count_negative = 0
-n = str()
+count_positive = 1
+count_negative = 1
+count_positive = float()
+count_negative = float()
+n = float()
 while (n != 0):
     n = float(input("Set the number': "))
     i += 1
