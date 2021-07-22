@@ -28,14 +28,13 @@ philosophy = ('\n'
 text = ['better', 'never', 'is']
 word = 0
 while word < len(text):
-    print('Word', text[word], 'is used', philosophy.count(text[word]),'times')
+    print('Word', text[word], 'is used', philosophy.count(text[word]), 'times')
     word += 1
 # текст у верхньому регістрі
 print(philosophy.upper())
-# символу “і” на “&”
-
-
-
+# символ “і” на “&”
+philosophyReplace = philosophy.replace('i', '&')
+print(philosophyReplace)
 
 
 
