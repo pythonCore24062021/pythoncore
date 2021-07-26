@@ -38,19 +38,5 @@ a = int(n2[0])
 b = int(n2[1])
 c = int(n2[2])
 print("dobutok:", a*b*c)
-n_list = list(n2)
-n_list.reverse()
-n3 = "".join(n_list)
-print("reverse order:", n3)
-n2 = input("set number: ")
-a = int(n2[0])
-b = int(n2[1])
-c = int(n2[2])
-n_sort = list(n2)
-n_sort.sort()
-print(n_sort)
-a = 10
-b = 20
-a, b = b, a
-print(a)
-print(b)
+
+
