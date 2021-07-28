@@ -1,11 +1,71 @@
-В класі Person визначте метод compare_age(), який повертатиме результат порівняння віку людини з Вашим віком. При заданих об’єктах p1, p2 і p3, які будуть ініціалізовані name та age, буде повертатися повідомлення наступного формату: {other_person} is {older than / younger than / the same age as} me.
+# Task 1
 
-Визначте атрибути fullname та email в класі Employee. При заданих first та last names:
+"""
+class Person:
 
-В конструкторі сформуйте fullname звичайним з’єднанням через пробіл first та last name.
-В конструкторі сформуйте email з’єднанням first та last name через ‘.’ між ними та приєднуючи ‘@company.com’ наприкінці.
-В класі Name визначте:
+    def compare_age(self, name, age):
+        your_age = int(input("Enter your age: "))
+        if age > your_age:
+            print(f"{name} is older than me")
+        elif age < your_age:
+            print(f"{name} is younger than me")
+        else:
+            print(f"{name} is the same age as me")
 
-атрибути для first name та last name (fname та lname відповідно);
-атрибут fullname що повертає first і last names;
-атрибут initials який повертає ініціали (перші літери first та last name, розділених ‘.’ .
+
+
+p1 = Person()
+p1.compare_age('olx',21)
+p2 = Person()
+p2.compare_age('BTS', 0)
+p3 = Person()
+p3.compare_age("Ivan", 12)
+
+
+#!!!!!!!!!!!!!!!!!  p4 = Person.compare_age()  --- why this doesn't work?  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+"""
+
+# Task 2
+"""
+
+class Employee:
+    
+    def __init__(self, first_name, last_name):
+        self.first_name = first_name
+        self.last_name = last_name
+        
+    def fullname_creation(self):
+        fullname = self.first_name + " " + self.last_name
+        print(f"The fullname is {fullname}")
+        return fullname
+    
+    def email_creation(self):
+        email = self.first_name+ "." + self.last_name + "@company.com"
+        print(f"The email is {email}")
+        return email
+    
+    
+em1 = Employee("Oleksandr", "Moldovan")
+em1.fullname_creation()
+em1.email_creation()
+
+"""
+
+# Task 3
+
+'''
+class Name:
+    
+    def __init__(self, fname, lname):
+        self.fname = fname
+        self.lname = lname
+        fullname = fname + " " + lname
+        initials = fname[0] + "." + lname[0] + "."
+        print()
+        print(f"{fullname}, \n{initials}")
+
+
+a = Name("Olek", "Moldovan")
+b = Name("Gevorgh", "Sacybelli")
+
+'''

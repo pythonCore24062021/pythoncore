@@ -1,5 +1,6 @@
 # 2 Task
-'''counter = 0
+'''
+counter = 0
 counter_number = 0
 while counter < 10:
     number = int(input("Vvedit naturlne chyslo bilshe 2: "))
@@ -11,7 +12,9 @@ while counter < 10:
 
     if number % 5 == 0:
         counter_number = counter_number + 1
-    print(f"{counter_number}")'''
+    print(f"{counter_number}")
+
+'''
 
 # Task 3
 '''for i in range(1, 10):
@@ -20,6 +23,8 @@ while counter < 10:
             print(f"{i}*{j}", end=",")
         else:
             print(f"{i}*{j}\n")'''
+
+
 # Task 4 ---- подивитися ще розв'язки
 '''a = int(input("Vvedit vysotu priamokutnyka: "))
 b = int(input("Veedit dovzynu primokutnyka: "))
@@ -35,7 +40,7 @@ for i in range(a):
         print("*", end="")
     print()'''
 
-#Task 5
+# Task 5
 '''sum_ = 0
 dob = 1
 count = 1
@@ -76,7 +81,7 @@ while numbers != 0:
         vidjemni = minus_count / one_percent
 print(f"The percent of >0 is {round(dodatni,2)}.The percent of < 0 is {round(vidjemni,2)}")'''
 
-#Task 1
+# Task 1
 
 import random
 chyslo = random.randint(0, 100)
