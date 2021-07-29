@@ -7,9 +7,9 @@ for i in range(len(A)):
     print(sum(A[i]))
     print()
 
-# for i in range(len(A)):
-#     s = 0
-#     for j in range(len(A)):
-#         s += A[j][i]
-#     print(s, end=' ')
-# print()
+for i in range(len(A)):
+    s = 0
+    for j in range(len(A)):
+        s += A[j][i]
+    print(s, end=' ')
+print()
