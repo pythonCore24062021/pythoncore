@@ -12,8 +12,9 @@ while (n != 0):
     if (n < 0) and (n != 0):
         count_negative += 1
 else:
-    print(count_positive)
+    if count_positive = 0:
+        print(count_positive)
     print(count_negative)
-    print(count_positive//(count_positive+count_negative)*100)
+    print(count_positive // (count_positive + count_negative) * 100)
     print(count_negative // (count_positive + count_negative) * 100)
 
