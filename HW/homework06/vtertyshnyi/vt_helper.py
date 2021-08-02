@@ -26,12 +26,22 @@ def get_random_list (length = 20, min_val = -100, max_val = 100):
         ]
     return my_list
 
-def get_matrix (x = 3, y = 3):
+def get_matrix (n = 3, m = 3):
     matrix = [
-        get_random_list(x)
-        for i in range(y)
+        get_random_list(m)
+        for i in range(n)
     ]
 
+    return matrix
+
+def get_user_input_matrix(n = 3, m = 3):
+    matrix = []
+    for i in range(n):
+        row = []
+        for j in range(m):
+            print(f"matrix[{i+1}][{j+1}] = ", end = '')
+            row.append(get_user_input_numbers())
+        matrix.append(row)
     return matrix
 
 def print_matrix(matrix):
