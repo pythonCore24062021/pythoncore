@@ -25,7 +25,7 @@ for i in range(3):
 M.append(row)
 for i in range(3+1):
     for j in range(3+1):
-        if not (i == 3) and not (j == 3):
+        if not (i==3 and j==3):
             print(M[i][j], end="\t")
     print()
 print()
